@@ -1,11 +1,14 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -13,36 +16,6 @@
   --h1-font-size: 2rem;
   --normal-font-size: 1rem;
   --small-font-size: .813rem;
-  --light_background: #ffffff;
-  --light_foreground: #171717;
-  --dark_background: #111827;
-  --dark_foreground: #ffffff;
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(0, 0%, 0%);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--light_foreground);
-  background: var(--light_background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body.dark {
-  color: var(--dark_foreground);
-  background: var(--dark_background);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 
 /*=============== BASE ===============*/
