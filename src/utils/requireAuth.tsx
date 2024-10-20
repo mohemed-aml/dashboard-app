@@ -1,7 +1,7 @@
 // utils/requireAuth.tsx
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useAuth } from './authContext';
+import { useAuth } from '@/context/AuthContext';
 
 const useRequireAuth = () => {
   const { user, loading } = useAuth();
